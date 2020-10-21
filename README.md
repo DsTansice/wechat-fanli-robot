@@ -7,6 +7,8 @@
 - 自动同意好友申请
 - 淘宝优惠券查询
 
+![](docs/images/weixin.png)
+
 ## 实现微信机器人
 
 机器人是基于 [wechaty](https://wechaty.js.org/v/zh/quick-start) 来实现，官方文档已经有了非常的详细的教程，所以这里不做赘述。
