@@ -1,0 +1,33 @@
+{
+  "name": "wechat-fanli-robot",
+  "version": "1.0.0",
+  "description": "wechat fanli robot",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env WECHATY_LOG=info node -r ts-node/register src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henryfanyiye/wechat-fanli-robot.git"
+  },
+  "keywords": [
+    "robot"
+  ],
+  "author": "Henry Fan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/henryfanyiye/wechat-fanli-robot/issues"
+  },
+  "homepage": "https://github.com/henryfanyiye/wechat-fanli-robot#readme",
+  "dependencies": {
+    "@types/request": "^2.48.5",
+    "cross-env": "^7.0.2",
+    "moment-timezone": "^0.5.31",
+    "qrcode-terminal": "^0.12.0",
+    "wechaty": "^0.48.13"
+  },
+  "devDependencies": {
+    "@chatie/tsconfig": "^0.10.1"
+  }
+}
