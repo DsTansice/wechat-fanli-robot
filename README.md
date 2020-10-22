@@ -39,3 +39,10 @@
 3. [生成淘口令](https://open.taobao.com/api.htm?docId=31127&docType=2&scopeId=11655)
 
 具体接口参数可以查看对应文档，淘宝开放平台虽然后解析淘口令和创建高佣转链接 API，但是一个没有权限，一个需要授权，所以这里采用[淘口令](https://www.taokouling.com/)现成的接口实现。
+
+## 本地运行
+
+```
+npm install
+WECHATY_PUPPET_PADPLUS_TOKEN=your-token npm start
+```
