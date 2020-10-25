@@ -49,9 +49,8 @@ async function onFriendship(friendship: any) {
 
 async function onMessage(msg: Message) {
     log.info('StarterBot', msg.toString());
-
-    if (msg.text()) {
-        try {
+    try {
+        if (msg.text()) {
             // 提取淘口令
             const rgx = /([\$\xA2-\xA5\u058F\u060B\u09F2\u09F3\u09FB\u0AF1\u0BF9\u0E3F\u17DB\u20A0-\u20BD\uA838\uFDFC\uFE69\uFF04\uFFE0\uFFE1\uFFE5\uFFE6])\w{8,12}([\$\xA2-\xA5\u058F\u060B\u09F2\u09F3\u09FB\u0AF1\u0BF9\u0E3F\u17DB\u20A0-\u20BD\uA838\uFDFC\uFE69\uFF04\uFFE0\uFFE1\uFFE5\uFFE6])/;
             const pwd: any = msg.text().match(rgx);
@@ -61,9 +60,9 @@ async function onMessage(msg: Message) {
             } else if (msg.text() === 'ding') {
                 await msg.say('dong');
             }
-        } catch (err) {
-            log.error(err);
         }
+    } catch (err) {
+        log.error(err);
     }
 }
 
