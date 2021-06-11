@@ -7,20 +7,20 @@ import {
     Friendship,
 
 } from 'wechaty';
-import {generate} from 'qrcode-terminal';
+import { generate } from 'qrcode-terminal';
 import TaoBaoController from './controller/taobao';
 
 const taobao = new TaoBaoController();
 
 const bot = new Wechaty({
     name: 'wechat-fanli-robot',
-    puppet: 'wechaty-puppet-padplus',
+    puppet: 'wechaty-puppet-wechat',
     puppetOptions: {}
 });
 
 function onScan(qrcode: string, status: ScanStatus) {
     if (status === ScanStatus.Waiting || status === ScanStatus.Timeout) {
-        generate(qrcode, {small: true});  // show qrcode on console
+        generate(qrcode, { small: true });  // show qrcode on console
 
         const qrcodeImageUrl = [
             'https://wechaty.js.org/qrcode/',

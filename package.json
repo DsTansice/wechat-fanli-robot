@@ -5,7 +5,7 @@
   "main": "src/index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cross-env WECHATY_LOG=info node -r ts-node/register src/index.ts"
+    "start": "ts-node src/index.ts"
   },
   "repository": {
     "type": "git",
@@ -22,12 +22,12 @@
   "homepage": "https://github.com/henryfanyiye/wechat-fanli-robot#readme",
   "dependencies": {
     "@types/request": "^2.48.5",
-    "cross-env": "^7.0.2",
     "moment-timezone": "^0.5.31",
     "qrcode-terminal": "^0.12.0",
-    "wechaty": "^0.48.13"
+    "wechaty": "^0.61.18"
   },
   "devDependencies": {
-    "@chatie/tsconfig": "^0.10.1"
+    "@chatie/tsconfig": "^0.10.1",
+    "wechaty-puppet-wechat": "^0.28.1"
   }
 }
