@@ -21,13 +21,13 @@
   },
   "homepage": "https://github.com/henryfanyiye/wechat-fanli-robot#readme",
   "dependencies": {
-    "@types/request": "^2.48.5",
-    "moment-timezone": "^0.5.31",
     "qrcode-terminal": "^0.12.0",
+    "request-promise": "^4.2.6",
     "wechaty": "^0.61.18"
   },
   "devDependencies": {
     "@chatie/tsconfig": "^0.10.1",
+    "@types/request-promise": "^4.1.47",
     "wechaty-puppet-wechat": "^0.28.1"
   }
 }
