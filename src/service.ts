@@ -9,8 +9,6 @@ export default class Service {
       strictSSL: false,
       body: { msg },
     };
-    return rp(opt).catch(err => {
-      return err;
-    });
+    return rp(opt);
   }
 }

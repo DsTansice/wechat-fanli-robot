@@ -51,11 +51,7 @@ async function onFriendship(friendship: any) {
 async function onMessage(msg: Message) {
   log.info('StarterBot', msg.toString());
   try {
-    if (msg.text()) {
-      const text = msg.text();
-      await msg.say(tmp(text));
-      await service.send(text);
-    }
+    await service.send(msg.text());
   } catch (err) {
     log.error(err);
     await msg.say('好像有什么不对呢');
