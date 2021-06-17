@@ -8,7 +8,6 @@ import {
 
 } from 'wechaty';
 import { generate } from 'qrcode-terminal';
-import { template as tmp } from './lib/message-template';
 import Service from './service';
 
 const service = new Service();
