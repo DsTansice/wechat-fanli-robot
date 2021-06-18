@@ -52,7 +52,9 @@ async function onMessage(msg: Message) {
   try {
     if (msg.text()) {
       const res = await service.send(msg.text());
-      await msg.say(res.data);
+      if (res.data) {
+        await msg.say(res.data);
+      }
     }
   } catch (err) {
     log.error(err);
