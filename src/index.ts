@@ -48,7 +48,7 @@ async function onFriendship(friendship: any) {
 
 async function onMessage(msg: Message) {
   log.info('Message from %s to <%s> : %s', msg.from(), msg.to(), msg.text());
-  if (msg.text()) {
+  if (msg.text() && !msg.self()) {
     try {
       const res = await service.send(msg.text());
       if (res.data) {
