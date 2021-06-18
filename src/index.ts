@@ -4,8 +4,7 @@ import {
   ScanStatus,
   Contact,
   Message,
-  Friendship,
-
+  Friendship
 } from 'wechaty';
 import { generate } from 'qrcode-terminal';
 import Service from './service';
@@ -48,17 +47,17 @@ async function onFriendship(friendship: any) {
 }
 
 async function onMessage(msg: Message) {
-  log.info('StarterBot', msg.toString());
-  try {
-    if (msg.text()) {
+  log.info(`Message from <%s> to <%s> : %s`, msg.from(), msg.to(), msg.text());
+  if (msg.text()) {
+    try {
       const res = await service.send(msg.text());
       if (res.data) {
         await msg.say(res.data);
       }
+    } catch (err) {
+      log.error(err);
+      await msg.say('好像有什么不对呢');
     }
-  } catch (err) {
-    log.error(err);
-    await msg.say('好像有什么不对呢');
   }
 }
 
