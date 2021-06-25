@@ -5,3 +5,7 @@ node_modules/
 .vscode
 
 package-lock.json
+
+dist
+
+wechat-fanli-robot.memory-card.json
