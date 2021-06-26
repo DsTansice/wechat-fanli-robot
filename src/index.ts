@@ -13,7 +13,7 @@ const service = new Service();
 
 const bot = new Wechaty({
   name: 'wechat-fanli-robot',
-  puppet: 'wechaty-puppet-puppeteer',
+  puppet: 'wechaty-puppet-wechat4u',
   puppetOptions: {}
 });
 
