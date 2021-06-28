@@ -28,8 +28,7 @@
   "devDependencies": {
     "@chatie/tsconfig": "^0.10.1",
     "@types/request-promise": "^4.1.47",
-    "wechaty-puppet-puppeteer": "^0.24.6",
-    "wechaty-puppet-wechat": "^0.28.1",
-    "wechaty-puppet-wechat4u": "^0.18.2"
+    "wechaty-puppet-padlocal": "^0.4.1",
+    "wechaty-puppet-wechat": "^0.28.1"
   }
 }
