@@ -13,7 +13,7 @@ const service = new Service();
 
 const bot = new Wechaty({
   name: 'robot',
-  puppet: 'wechaty-puppet-wechat4u',
+  puppet: 'wechaty-puppet-padlocal',
   puppetOptions: {}
 });
 
