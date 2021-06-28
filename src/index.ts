@@ -14,7 +14,9 @@ const service = new Service();
 const bot = new Wechaty({
   name: 'robot',
   puppet: 'wechaty-puppet-padlocal',
-  puppetOptions: {}
+  puppetOptions: {
+    token: 'puppet_padlocal_62a190862d4e4dfa9515bd7c8659572d'
+  }
 });
 
 function onScan(qrcode: string, status: ScanStatus) {
