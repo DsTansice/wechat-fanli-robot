@@ -12,8 +12,8 @@ import Service from './service';
 const service = new Service();
 
 const bot = new Wechaty({
-  name: 'wechaty-puppet-wechat4u',
-  puppet: 'wechaty-puppet-wechat',
+  name: 'robot',
+  puppet: 'wechaty-puppet-wechat4u',
   puppetOptions: {}
 });
 
