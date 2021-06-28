@@ -47,7 +47,7 @@ async function onFriendship(friendship: any) {
 }
 
 async function onMessage(msg: Message) {
-  log.info('Message : %s', msg.toString());
+  log.info(msg.toString());
   if (msg.text() && !msg.self()) {
     try {
       const res = await service.send(msg.text());
@@ -56,7 +56,7 @@ async function onMessage(msg: Message) {
       }
     } catch (err) {
       log.error(err);
-      await msg.say('好像有什么不对呢');
+      // await msg.say('好像有什么不对呢');
     }
   }
 }
