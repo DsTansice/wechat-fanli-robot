@@ -12,7 +12,7 @@ import Service from './service';
 const service = new Service();
 
 const bot = new Wechaty({
-  name: 'wechat-fanli-robot',
+  name: 'wechaty-puppet-wechat4u',
   puppet: 'wechaty-puppet-wechat',
   puppetOptions: {}
 });
