@@ -13,7 +13,7 @@ const service = new Service();
 
 const bot = new Wechaty({
   name: 'robot',
-  puppet: 'wechaty-puppet-puppeteer'
+  puppet: 'wechaty-puppet-wechat'
 });
 
 function onScan(qrcode: string, status: ScanStatus) {
